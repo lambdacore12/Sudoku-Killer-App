@@ -36,19 +36,39 @@ namespace Sudoku_Killer_Helper
             }
             else
             {
-                //get target number from user
-                int targetNumber = int.Parse(Target_Number_Input.Text);
+                if (Cells_Input.Text == "2")
+                {
+                    //get target number from user
+                    int targetNumber = int.Parse(Target_Number_Input.Text);
 
-                //calculate combinations
-                List<Combination> mainList = MainLogic.CalculateTwo(targetNumber);
+                    //calculate combinations
+                    List<Combination> mainList = MainLogic.CalculateTwo(targetNumber);
 
-                //update combinations in UI
-                Combinations_Number.Text = "(" + MainLogic.TotalCombinations.ToString() + ")";
+                    //update combinations in UI
+                    Combinations_Number.Text = "(" + MainLogic.TotalCombinations.ToString() + ")";
 
-                //create readable list of combinations
-                var read = ReadableCombination.MakeReadable(mainList);
+                    //create readable list of combinations
+                    var read = ReadableCombination.MakeReadable(mainList);
 
-                Combinations_List.ItemsSource = read;
+                    Combinations_List.ItemsSource = read;
+                }
+                else if(Cells_Input.Text == "3")
+                {
+                    //get target number from user
+                    int targetNumber = int.Parse(Target_Number_Input.Text);
+
+                    //calculate combinations
+                    List<Combination> mainList = MainLogic.CalculateThree(targetNumber);
+
+                    //update combinations in UI
+                    Combinations_Number.Text = "(" + MainLogic.TotalCombinations.ToString() + ")";
+
+                    //create readable list of combinations
+                    var read = ReadableCombination.MakeReadable(mainList);
+
+                    Combinations_List.ItemsSource = read;
+                }
+                
             }
             
             
