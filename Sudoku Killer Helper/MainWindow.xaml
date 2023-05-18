@@ -28,8 +28,11 @@
             <Button x:Name="ExitApp_BTN" Grid.Row="3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,35" Padding="5,5,5,5" Click="ExitApp_BTN_Click">Exit App</Button>
             <!--#endregion-->
             <TextBox x:Name="Target_Number_Input" Grid.Column="1" VerticalAlignment="Center" Margin="60,30,60,30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="Target_Number_Input_TextChanged"/>
-            <TextBox x:Name="Cells_Input" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="60,30,60,30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">2</TextBox>
-            <ListBox x:Name="Combinations_List" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Margin="30,20,30,20" HorizontalContentAlignment="Center" Padding="0,10,0,0">                
+            <ComboBox x:Name="Cells_Input" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="45,25,45,25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" SelectedIndex="0" Padding="5,5,5,7">
+                <ComboBoxItem Content="2" />
+                <ComboBoxItem Content="3" />
+            </ComboBox>
+            <ListBox x:Name="Combinations_List" Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Margin="20,20,20,20" HorizontalContentAlignment="Center" Padding="0,10,0,0">                
             </ListBox>
         </Grid>       
 
