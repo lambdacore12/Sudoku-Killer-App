@@ -7,7 +7,6 @@ You give a target number (7 for example) and it gives you the possible combinati
 Future plans:
 1- Make window always on top
 2- Ability to change color of combination(s) to rule it out when playing
-3- Change the number of cells in target cage
 
 If you've played Killer Sudoku before, you know this is helpful.
 Your suggestions are highly welcome.
